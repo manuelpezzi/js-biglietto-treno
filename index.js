@@ -5,7 +5,22 @@
  * 4-output dalla console
  * 
  */
-let Prezzo = 0.21
-let Età = parseInt(prompt("scrivi qui la tua età"))
-let kilometro = parseInt(prompt("scrivi quanti kilometri devi percorrere"))
+
+
+
+function calcolaPrezzoTotale(km, eta) {
+
+    // Applicazione degli sconti
+    if (Età < 18) {
+        // Sconto del 20% per minorenni
+        prezzoFinale -= prezzoFinale * 0.20;
+    }
+    else if (Età > 65) {
+        // sconto del 40% per over 65
+        prezzoFinale -= prezzoFinale * 0.40;
+    }
+
+
+    console.log("Il prezzo totale del viaggio è: €" + prezzoFinale.toFixed(2));
+}
 
